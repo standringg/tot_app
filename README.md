@@ -1,4 +1,10 @@
-== README
+#Tour of Tauranga: Event Ground Zero
+
+This is the online home for the [*Tour of Tauranga*], 
+a fundraising and publicity event for the 
+[Bay of Plenty Multiple Sclerosis Society] (BOPMS) (http://bopms.co.nz)
+
+by [Greg Standring] (standringg@Gmail.com)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
