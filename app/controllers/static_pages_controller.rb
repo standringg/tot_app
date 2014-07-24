@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def event_details
   end
+
+  def about
+  end
 end
