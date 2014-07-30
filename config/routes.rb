@@ -1,10 +1,11 @@
 TotApp::Application.routes.draw do
+  resources :users
   root 'static_pages#home'
   match '/about',         to: 'static_pages#about',         via: 'get'
   match '/contact',       to: 'static_pages#contact',       via: 'get'
   match '/course',        to: 'static_pages#course',        via: 'get'
   match '/event_details', to: 'static_pages#event_details', via: 'get'
-  match '/signup',       to: 'users#new',                  via: 'get'
+  match '/signup',        to: 'users#new',                  via: 'get'
   #get "static_pages/course"
   #get "static_pages/event_details"
   #get "static_pages/about"

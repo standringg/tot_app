@@ -17,7 +17,7 @@ describe "Static pages" do
 
     it_should_behave_like "all static pages"
     
-    it { should_not have_link('Home') }
+    #it { should_not have_link('Home') }
   end
   
   describe "Event details page" do
