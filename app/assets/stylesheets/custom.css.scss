@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  padding-top: 160px;
+  padding-top: 50px;
 }
 
 section {
@@ -94,6 +94,18 @@ h8 {
   font-weight: bold;
   color: $grayDark;
   }
+
+  h10 {
+  font-size: 1.7em;
+  font-family: Palatino Linotype, Book Antiqua, serif;
+  font-style: italic;
+  line-height: 150%;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $orange;
+}
 
 p {
   font-size: 1.1em;

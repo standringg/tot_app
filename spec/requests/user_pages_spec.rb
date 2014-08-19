@@ -13,8 +13,8 @@ describe "User pages" do
       visit users_path
     end
 
-    it { should have_title('All users') }
-    it { should have_content('All users') }
+    it { should have_title('Suporters') }
+    it { should have_content('Suporters') }
 
     describe "pagination" do
 
