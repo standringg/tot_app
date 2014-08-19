@@ -2,13 +2,13 @@
       <div class="navbar-inner">
         <div class="container">
           
-          <%= link_to image_tag("msbop.png", alt: "BOPMS"), 'http://bopms.co.nz/', id: "logo" %>
+          <%= link_to image_tag("sponsor.png", alt: "BOPMS"), 'http://bopms.co.nz/', id: "logo" %>
           <nav>
             <ul class="nav pull-right">
               <li><%= link_to "Home",    root_path %></li>
               <li><%= link_to "Course Map",    course_path %></li>
              <% if signed_in? && current_user.admin? %>
-              <li><%= link_to "Event Details",    event_details_path %></li>
+              <li><%= link_to "Admin",    event_details_path %></li>
             <% end %>
             <li><%= link_to "Event Details",    event_details_path %></li>
                <% if signed_in? %>

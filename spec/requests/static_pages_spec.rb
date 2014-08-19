@@ -5,7 +5,7 @@ describe "Static pages" do
   subject { page }
 
   shared_examples_for "all static pages" do
-    it { should have_selector('h1', text: heading) }
+    it { should have_selector('h7', text: heading) }
     it { should have_title(full_title(page_title)) }
   end
 
@@ -47,14 +47,7 @@ describe "Static pages" do
     it_should_behave_like "all static pages"
   end  
 
-  describe "Contact page" do
-    before { visit contact_path }
-
-    let(:heading)    { 'Contact' }
-    let(:page_title) { 'Contact' }
-
-    it_should_behave_like "all static pages"
-  end
+ 
 
   it "should have the right links on the layout" do
     visit root_path
@@ -62,8 +55,7 @@ describe "Static pages" do
     expect(page).to have_title(full_title('About Us'))
     click_link "Course"
     expect(page).to have_title(full_title('Course'))
-    click_link "Contact"
-    expect(page).to have_title(full_title('Contact'))
+    
     click_link "Home"
     click_link "Register now!"
     expect(page).to have_title(full_title('Sign up'))

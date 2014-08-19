@@ -1,12 +1,28 @@
-<div class="center hero-unit">
-  
-<%= link_to image_tag("tour_of_tauranga_logo.gif", alt: "BOPMS"), 'http://bopms.co.nz/' %><h1>Tour of Tauranga</h1>
-  <h2>
-	Welcome to our home page for the Tour of Tauranga which is the
-	Premiere fundraising event for <br> 
+<div class="center jumbotrom">
+  <%= link_to image_tag("tour_of_tauranga_logo.gif", alt: "BOPMS"), 'http://bopms.co.nz/' %>
+  <h7><br><br>
+	Welcome to our home page for the Tour of Tauranga, <br>the
+	premiere fundraising event for <br>
 	<a href="http://bopms.co.nz/">Bay of Plenty Multiple Sclerosis Society (BOPMS)</a>
-  </h2>
-  <%= link_to "Register now!", signup_path, class: "btn btn-large btn-primary" %>
-</div>
+  </h7><br><br>
+  
+  
 
-<%= link_to image_tag("msbop.png", alt: "BOPMS"), 'http://bopms.co.nz/' %>
+<h7>Event Date: Sunday 9 November 2014 8:30 am at Herries Park,<br> downtown Tauranga on the Strand</h7>
+	<br><br>
+	<%= link_to image_tag("herries_park.jpg", alt: "BOPMS"), 'http://bopms.co.nz/' %>
+	<br><br>
+	
+	
+	<h8>Tips for the Day<br>Bring a drink and snacks, there are plenty of rest stops along the way <br>Dress for the weather - bring a warm layer <br>Bring a camera <br>Bring your family and friends and have some fun!</h8><br><br>
+    
+	
+	<h2><% if signed_in? && current_user.admin? %>
+  <%= link_to "Register now!", signup_path, class: "btn btn-large btn-primary" %>
+  <% end %></h2>
+	
+	
+	
+	
+	
+

@@ -1,13 +1,17 @@
 <footer class="footer">
   <small>
-    <a href="http://railstutorial.org/">Website</a>
-    by Greg Standring
+    <a><%= link_to image_tag("msbop.png", alt: "BOPMS"), 'http://bopms.co.nz/' %></a>
   </small>
-  <nav>
-    <ul>
-      <li><%= link_to "About",   about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-      <li><a href="http://news.railstutorial.org/">News</a></li>
-    </ul>
-  </nav>
-</footer>
+  <br>
+  <ul>
+  	<li>
+      <%= link_to "About",   about_path %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  	</li>
+  </ul>
+  <br>
+    <copyright>
+      <p1>Copyright 2014. BOP MS Society. All rights reserved.</P1>
+    </copyright>
+ </footer>    
+
+
