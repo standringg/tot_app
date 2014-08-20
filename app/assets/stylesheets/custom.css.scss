@@ -17,7 +17,18 @@ html {
 }
 
 body {
-  padding-top: 50px;
+  padding-top: 40px;
+}
+
+r {
+  color: red;
+}
+
+rb {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: -1px;
 }
 
 section {
@@ -30,6 +41,23 @@ textarea {
 
  left {
    float: left;
+ }
+
+ left1 {
+   float: left;
+   text-align: left;
+   margin-left: 120px;
+ }
+
+  left2 {
+   float: left;
+   text-align: left;
+   margin-left: 50px;
+ }
+
+ center {
+   line-height:50%;
+   float: center;
  }
 
 .center {
@@ -115,6 +143,7 @@ p {
 p1 {
   font-size: 0.8em;
   line-height: 0.8em;
+  margin-right: 60px;
 }
 
 
@@ -152,6 +181,7 @@ footer {
   }
   small {
     float: left;
+    margin-left: 0px;
   }
   copyright {
     text-align: center;
@@ -161,7 +191,8 @@ footer {
     list-style: none;
     li {
       float: left;
-      margin-left: 20px;
+      margin-right: 50px;
+      line-height: 450%;
     }
   }
 }
