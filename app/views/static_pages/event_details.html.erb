@@ -8,9 +8,9 @@ Sunday 9 November 2014.
 <br>
 On the day entries are available - cash only
 <br>
-Registration 7.30-8.30am / Start 9am
+Registrations from 7.30am / Start 9am
 <br>
-Prize giving /Spot Prizes 1pm
+Prize giving /Spot Prizes 12:00pm
 </h7>
 <br>
 <small>
@@ -18,15 +18,19 @@ Prize giving /Spot Prizes 1pm
 </small>
 <br>
 <br>
-
-<left2><center><r>
-	One lucky early bird registration entrant could win a 10 week fitness pack <br><br><br>from <a><%= link_to "Care of Life Personal Fitness", "http://www.lifepersonalfitness.co.nz", :target =>"_blank"%></a> valued at $350!</r></center>
-	
-	<br>
-	Enjoy a scenic ride around Taurangas great cycleways, explore the quiet parks and lovely waterways. Get out on your bikes this spring for a leisurely 25km (or 10km) bike ride. The <a><%= link_to"course", course_path %></a> is unique, safe, and guaranteed to be enjoyed, with great spot prizes to be won, all in support of the BOP Multiple Sclerosis Society.
+<left2>
+	<center><r>
+	Register before the 7th of October and you will be in the draw to win a Xmas camp fitness <br><br><br>package from <a><%= link_to "Life Personal Fitness", "http://www.lifepersonalfitness.co.nz", :target =>"_blank"%></a> valued at $350!
+    </r></center>
+	<h2>
+	<br><% if signed_in? && current_user.admin? %>
+    <%= link_to "Register now!", signup_path, class: "btn btn-large btn-primary" %>
+    <% end %>
+    </h2>
+	Enjoy a scenic ride around Taurangas great cycleways, explore the quiet parks and lovely waterways. Get out on your bikes this spring for a leisurely 25km (or 12km) bike ride. The <a><%= link_to"course", course_path %></a> is unique, safe, and guaranteed to be enjoyed, with great spot prizes to be won, all in support of the BOP Multiple Sclerosis Society.
     <br>
     <br>
-	Please get your bikes checked at <a><%= link_to "Redbike Mt Maunganui", "http://www.redbike.net.nz/", :target =>"_blank"%></a> (this is free of charge) prior to the day to make sure your bike is in a safe working order. We are very fortunate to have some great sponsers and prizes so stay around after the ride to be in the draw for some fantastic spot pizes.
+	Please get your bikes checked at <a><%= link_to "Redbike Mt Maunganui", "http://www.redbike.net.nz/", :target =>"_blank"%></a> (this is free of charge) prior to the day to make sure your bike is in a safe working order. We are very fortunate to have some great sponsors and prizes so stay around after the ride to be in the draw for some fantastic spot pizes.
     <br>
     <br>
 </left2>
@@ -35,40 +39,31 @@ Prize giving /Spot Prizes 1pm
 		A great big thanks to our kind supporters:
 	</h7>
 <br>
-	Redbike Mt Maunganui - 
-	<a><%= link_to"www.redbike.net.nz","http://www.redbike.net.nz", :target =>"_blank" %></a>
+	Sthill Mt Maunganui - 
+	<a><%= link_to"www.stihlshop.co.nz","http://www.stihlshop.co.nz/", :target =>"_blank" %></a>
 <br>
-	The Weekend Sun - 
+	SunMedia - 
 	<a><%= link_to"www.sunlive.co.nz","http://www.sunlive.co.nz/", :target =>"_blank" %></a>
 <br>
-	Bells and Whistles - <a>
-	<%= link_to"www.bellsandwhistles.co.nz","http://www.bellsandwhistles.co.nz/", :target =>"_blank"%></a>
+	The Hits - <a><%= link_to"www.thehits.co.nz","http://www.thehits.co.nz/", :target =>"_blank"%></a>
 <br>
-	Mazzola Hair Dressing
+	Hedgehog Bikes - <%= link_to"www.hedgehogbikes.co.nz","http://www.hedgehogbikes.co.nz/", :target =>"_blank"%></a>
 <br>
-	Jetts Gymnasium - <%= link_to"www.jetts.co.nz", "http://www.jetts.co.nz", :target =>"_blank"%></a>
+	Countdown Cameron Rd &amp; Fraser Cove - <%= link_to"www.countdown.co.nz", "http://www.countdown.co.nz", :target =>"_blank"%></a>
 <br>
-	Xerowaste Education
+	Life Personnel Fitness - <%= link_to"www.lifepersonalfitness.co.nz","http://www.lifepersonalfitness.co.nz", :target =>"_blank"%></a>
+<br>	
+	Tasti - <%= link_to"www.tasti.co.nz","http://www.tasti.co.nz/", :target =>"_blank"%></a>
 <br>
-	Life Personnel Fitness
+	Tauranga City Council - <%= link_to"www.tauranga.govt.nz","https://www.tauranga.govt.nz/", :target =>"_blank"%></a>
 <br>
-	Mac Pac Tauranga - <%= link_to"www.macpac.co.nz","http://www.macpac.co.nz", :target =>"_blank"%></a>
+	Mills Reef Winery - <%= link_to"www.millsreef.co.nz", "http://www.millsreef.co.nz/", :target =>"_blank"%></a>
 <br>
-	Star Bucks - <%= link_to"www.starbucks.co.nz","http://www.starbucks.co.nz", :target =>"_blank"%></a>
+	The Warehouse Fraser Cove - <%= link_to"www.thewarehouse.co.nz", "http://www.thewarehouse.co.nz/is-bin/INTERSHOP.enfinity/WFS/TWL-B2C-Site/en_NZ/-/NZD/ViewFindAStore-Store?RegionID=4&StoreID=Fraser+Cove&Region=Bay+of+Plenty", :target =>"_blank"%></a>
 <br>
-	Velocity T Shirts - <%= link_to"www.velo-city.co.nz", "http://www.velo-city.co.nz/", :target =>"_blank"%></a>
+	Payless Plastics - <%= link_to"www.paylessplastics.kiwi", "http://paylessplastics.kiwi/", :target =>"_blank"%></a>
 <br>
-	Lisa at Simply Beautiful - <%= link_to"www.simplybeautiful.co.nz", "http://www.simplybeautiful.co.nz", :target =>"_blank"%></a>
-<br>
-	Mills Reef - <%= link_to"www.millsreef.co.nz", "http://www.millsreef.co.nz", :target =>"_blank"%></a>
-><br>
-	Corner Stone 
-<br>
-	Sunrise Cafe
-<br>
-	The Dry Dock Cafe
-<br>
-	Tauranga City Council
+	The Gym Tauranga - <%= link_to"www.thegym.co.nz", "http://www.thegym.co.nz/", :target =>"_blank"%></a> 
 <br>
 	<h7>
 		Please support these local businesses!

@@ -1,7 +1,7 @@
 @import "bootstrap";
 
 /* mixins, variables, etc. */
-
+$blue: #003366;
 $grayMediumLight: #eaeaea;
 $orange: #ff9900;
 @mixin box_sizing {
@@ -100,7 +100,7 @@ h7 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: bold;
-  color: $orange;
+  color: $blue;
 }
 
 h8 {
@@ -110,7 +110,7 @@ h8 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: bold;
-  color: $grayLight;
+  color: $blue;
   }
 
   h9 {
