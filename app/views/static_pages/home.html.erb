@@ -20,9 +20,9 @@
     <rb>
 	Register before the 7th of October and you will be in the draw to win a Xmas camp fitness <br>package from <a><%= link_to "Life Personal Fitness", "http://www.lifepersonalfitness.co.nz", :target =>"_blank"%></a> valued at $350!</rb>
 	
-	<h2><% if signed_in? && current_user.admin? %>
-  <%= link_to "Register now!", signup_path, class: "btn btn-large btn-primary" %>
-  <% end %></h2>
+	
+  <%= link_to "Event Details & Entry", event_details_path, class: "btn btn-large btn-primary" %>
+  
 	
 	
 	
